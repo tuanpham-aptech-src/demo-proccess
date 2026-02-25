@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/flex.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container-fluid top-header">
+            <div class="container">
+                <div class="d-flex flex-wrap items-center justify-between py-3">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="./assets/images/header-logo-v2.svg" alt="company-logo">
+                        </a>
+                    </div>
+
+                    <nav class="navigator">
+                        <ul class="nav-list d-flex my-0">
+                            <li class="nav-item"><a class="nav-link" href="#">TRANG CHỦ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">TẬP LUYỆN</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/private-route.html">TƯ VẤN</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">CỬA HÀNG</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions d-flex">
+                        <button class="d-flex items-center gap-x-2 bg-white header-btn">
+                            <img src="./assets/images/user-active.svg" alt="">
+                            <span>Đăng nhập</span>
+                        </button>
+                        <button class="d-flex items-center gap-x-2 bg-primary-300 text-white header-btn rounded-xl">
+                            <span>Tải ứng dụng</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bottom-header bg-primary">
+            <div class="container">
+                <div class="d-flex py-3 justify-between items-center">
+                    <ul class="d-flex items-center gap-x-3 list-style-type-none my-0 px-0">
+                        <li>
+                            <button id="btnToggleSidebar"
+                                class="d-flex bg-primary items-center gap-x-2 text-white text-decoration-none text-sm">
+                                <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                                <span>Trigger Sidebar</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                                <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                                <span>Thiết bị chăm sóc sức khỏe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                                <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                                <span>Thiết bị tập luyện</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                                <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                                <span>Thực phẩm chức năng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                                <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                                <span>Phụ kiện - trang phục</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="input-search"></div>
+                    <div class="cart-block d-flex items-center gap-x-2 text-white text-sm">
+                        <div class="relative">
+                            <img src="./assets/images/bag-white.svg" alt="">
+                            <span class="cart-counter d-flex items-center justify-center absolute">3</span>
+                        </div>
+                        <span>Giỏ hàng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="d-flex">
+            <div id="sidebar" class="sidebar bg-primary">
+                <h2>Sidebar</h2>
+                <ul class="d-flex flex-column items-start gap-x-3 list-style-type-none my-0 px-0">
+                    <li>
+                        <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                            <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                            <span class="nav-text">Thiết bị chăm sóc sức khỏe</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                            <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                            <span class="nav-text">Thiết bị tập luyện</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                            <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                            <span class="nav-text">Thực phẩm chức năng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex items-center gap-x-2 text-white text-decoration-none text-sm">
+                            <img src="./assets/images/header-bottom-icon-1.svg" alt="">
+                            <span class="nav-text">Phụ kiện - trang phục</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-content px-3">
+                <div>
+                    <form style="width: 500px; margin: 100px auto;" id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="d-block">Tên tài khoản</label>
+                            <input type="text" id="username" class="d-block w-full px-2 py-2"
+                                placeholder="Tên tài khoản">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="d-block">Mật khẩu</label>
+                            <input type="password" id="password" class="d-block w-full px-2 py-2"
+                                placeholder="Mật khẩu">
+                        </div>
+                        <button type="submit" class="d-flex mx-auto items-center gap-x-2 bg-primary-300 text-white header-btn rounded-xl">
+                            <span>Đăng nhập</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div>
+                    <form style="width: 500px; margin: 100px auto;" id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerUsername" class="d-block">Tên tài khoản</label>
+                            <input type="text" id="registerUsername" class="d-block w-full px-2 py-2"
+                                placeholder="Tên tài khoản">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="d-block">Mật khẩu</label>
+                            <input type="password" id="registerPassword" class="d-block w-full px-2 py-2"
+                                placeholder="Mật khẩu">
+                        </div>
+                        <button type="submit" class="d-flex mx-auto items-center gap-x-2 bg-primary-300 text-white header-btn rounded-xl">
+                            <span>Đăng ký</span>
+                        </button>
+                    </form>
+                </div>
+
+
+                <div>
+                    <h2>Danh sách người dùng</h2>
+
+                    <div id="listUserContainer" class="rows">
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>

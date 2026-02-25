@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/flex.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div>
+        <h2>Danh sách công việc</h2>
+        <div>
+            <form style="width: 90%; margin: 60px auto;" id="todoForm">
+                <div class="mb-3">
+                    <label for="todoInput" class="d-block">Công việc</label>
+                    <div class="d-flex gap-x-2">
+                        <input type="text" id="todoInput" class="d-block w-full px-2 py-2"
+                            placeholder="Bạn muốn làm gì?">
+                        <button type="submit"
+                            class="d-flex mx-auto items-center gap-x-2 bg-primary-300 text-white header-btn rounded-xl">
+                            <span>Thêm</span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+        <div id="listTasks" class="rows">
+
+        </div>
+</body>
+<script src="./assets/js/todo.js"></script>
+
+</html>

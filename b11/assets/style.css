@@ -1,0 +1,303 @@
+
+:root{
+    --color-primary: #00adb0;
+    --color-primary-300: #00c2c5;
+}
+/* RESET CSS */
+body{
+    margin: 0;
+}
+*:not(i){
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+table, th, td, tr{
+    border: 1px solid #222;
+}
+table{
+    border-spacing: 0;
+    border-collapse:collapse
+}
+.bg-gray-400{
+    background-color: rgb(196, 196, 196);
+}
+.bg-white{
+    background-color: white;
+}
+.bg-primary{
+    background-color: var(--color-primary, '#00adb0');
+}
+.bg-primary-300{
+    background-color: var(--color-primary-300, '#00adb0');
+}
+
+.text-primary{
+    color: var(--color-primary, '#00adb0');
+}
+.text-white{
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+.font-semibold{
+    font-weight: 500;
+}
+.my-0{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mb-3{
+    margin-bottom: 12px;
+}
+.px-0{
+    padding-left: 0;
+    padding-right: 0;
+}
+.py-0{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.py-3{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.px-3{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.py-2{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.px-2{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.text-sm{
+    font-size: 13px;
+}
+.rounded-sm{
+    border-radius: 4px;
+}
+.rounded{
+    border-radius: 6px;
+}
+.rounded-lg{
+    border-radius: 8px;
+}
+.rounded-xl{
+    border-radius: 10px;
+}
+.list-style-type-none{
+    list-style-type: none;
+}
+.text-decoration-none{
+    text-decoration: none;
+}
+/* POSITION */
+.static {
+    position: static ;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.sticky{
+    position: sticky;
+}
+/* CUSTOM CSS */
+.promote-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* HEADER */
+.nav-list{
+    padding: 0;
+    /* bỏ kiểu list để không còn marker ở thẻ li */
+    list-style-type: none;
+}
+
+.nav-link{
+    color: black;
+    /* thay đổi phần gạch chữ */
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+}
+.nav-link.active{
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.header-btn{
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.parent-block{
+	width:350px;
+	height:400px;
+	background-color:blueviolet;
+}
+.my-demo-block {
+	width:150px;
+	height:200px;
+	background-color:cadetblue;
+}
+.child-1{
+    top: 20px;
+}
+.child-2{
+    background-color:rgb(200, 20, 223);
+
+}
+
+.footer{
+    height: 100vh;
+}
+
+.main-header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.dropdown-list{
+    width: fit-content;
+    padding: 12px;
+    background-color: #00adb0;
+    color: white;
+    border: 1px solid #2222224a;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.dropdown-wraper{
+     width: fit-content;
+    padding: 12px;
+     border: 1px solid #2222224a;
+}
+.dropdown-wraper:hover .dropdown-list{
+    display: block;
+}
+
+
+/* selector:pseudo-classes-name */
+.demo-text:hover{
+    color: red;
+    font-size: 100px;
+    transition-duration: 2s;
+}
+
+
+.search-block{
+    border: 1px solid #2222224a;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.search-block input{
+    border: none;
+}
+
+.search-block input:focus{
+    border: none;
+    outline: none;
+}
+
+.cart-counter{
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 12px;
+    top: -8px;
+    right: -8px
+}
+
+.custom-divider{
+    width: 80px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #00c2c5;
+}
+
+.sidebar{
+    width: 250px;
+    min-width: 250px;
+    height: calc(100vh - 127px);
+    transition: 0.3s ease;
+}
+.sidebar.mini{
+    width: 100px;
+    min-width: 100px;
+}
+.main-content{
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.sidebar.mini .nav-text{
+    display: none;
+}
+
+.product-small-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+}
+
+.product-small-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 2px solid #ff000000;
+}
+
+.preview-small-img.active{
+    border: 2px solid #ff0000;
+}
+
+#fullSizeImg{
+    width: 400px;
+    height: 400px;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.error-input{
+    border: 1px solid #ff0000!important;
+}
+.todo-card{
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 12px;
+}
+.todo-card:hover{
+    background-color: rgb(241, 241, 242);
+}
+
+.text-center{
+    text-align: center;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
